@@ -103,7 +103,7 @@ app.post("/web-data", async (req, res) => {
   }
 });
 
-const PORT = 8000;
+const PORT = "https://test-of-tg-app-server.onrender.com";
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
