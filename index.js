@@ -43,7 +43,7 @@ bot.on("message", async (msg) => {
             {
               text: "Products",
               web_app: {
-                url: "https://bwtn1ljs-3000.euw.devtunnels.ms/",
+                url: "https://startling-pithivier-f2c1ff.netlify.app/",
               },
             },
           ],
@@ -57,7 +57,7 @@ bot.on("message", async (msg) => {
             {
               text: "Enter Data",
               web_app: {
-                url: "https://bwtn1ljs-3000.euw.devtunnels.ms/form",
+                url: "https://startling-pithivier-f2c1ff.netlify.app/form",
               },
             },
           ],
