@@ -80,13 +80,14 @@ bot.on("message", async (msg) => {
 
 app.post("/data", async (req, res) => {
   const { queryId, products, totalPrice } = req.body;
+  const productList = products.join(", ");
   try {
     await bot.answerWebAppQuery(queryId, {
       type: "article",
       id: String(queryId),
       title: "Purchased",
       input_message_content: {
-        message_text: `You purchased: ${products} for ${totalPrice}`,
+        message_text: `You purchased: ${productList} for ${totalPrice}`,
       },
     });
     return res.status(200).json({});
